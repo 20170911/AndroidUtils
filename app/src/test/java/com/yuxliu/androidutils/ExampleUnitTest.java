@@ -1,8 +1,11 @@
 package com.yuxliu.androidutils;
 
+import com.google.gson.Gson;
+import com.yuxliu.androidutils.bean.TestResponse;
+
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -13,5 +16,12 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+    }
+
+    @Test
+    public void test_gson_static() {
+        String target = "{\"code\":0,\"message\":\"\",\"timer\":[]}";
+        Gson gson = new Gson();
+        gson.fromJson(target, TestResponse.class);
     }
 }
