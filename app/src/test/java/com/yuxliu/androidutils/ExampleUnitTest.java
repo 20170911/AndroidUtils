@@ -20,8 +20,9 @@ public class ExampleUnitTest {
 
     @Test
     public void test_gson_static() {
-        String target = "{\"code\":0,\"message\":\"\",\"timer\":[]}";
+        String target = "{\"code\":0,\"message\":\"Success!\",\"timer\":{\"\":\"\"}}";
         Gson gson = new Gson();
-        gson.fromJson(target, TestResponse.class);
+        TestResponse response = gson.fromJson(target, TestResponse.class);
+        System.out.println(response.toString());
     }
 }
