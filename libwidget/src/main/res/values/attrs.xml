@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CirclePointView">
+        <attr name="pointColor" format="color" />
+        <attr name="pointStrokeWidth" format="dimension" />
+        <attr name="isSolid" format="boolean" />
+    </declare-styleable>
+
+    <attr name="circleColor" format="color" />
+    <attr name="loadedColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="progressMax" format="integer" />
+    <attr name="progressVal" format="integer" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="isShowText" format="boolean" />
+    <attr name="useLoadedColor" format="boolean" />
+    <attr name="useClockwise" format="boolean" />
+
+    <attr name="progressType">
+        <enum name="stroke" value="0" />
+        <enum name="fill" value="1" />
+    </attr>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circleColor" />
+        <attr name="loadedColor" />
+        <attr name="circleWidth" />
+        <attr name="progressVal" />
+        <attr name="progressMax" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="isShowText" />
+        <attr name="progressType" />
+        <attr name="useLoadedColor" />
+        <attr name="useClockwise" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoFlowLayout">
+        <attr name="tagGravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="layoutMaxWidth" format="dimension" />
+    </declare-styleable>
+</resources>
